@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SGQQDataSet" targetNamespace="http://tempuri.org/SGQQDataSet.xsd" xmlns:mstns="http://tempuri.org/SGQQDataSet.xsd" xmlns="http://tempuri.org/SGQQDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SGQQConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SGQQConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGQQ.My.MySettings.GlobalReference.Default.SGQQConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_REGISTROSTableAdapter" GeneratorDataComponentClassName="VIEW_REGISTROSTableAdapter" Name="VIEW_REGISTROS" UserDataComponentName="VIEW_REGISTROSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SGQQConnectionString (MySettings)" DbObjectName="SGQQ.dbo.VIEW_REGISTROS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CD_REGISTRO, DS_REGISTRO, NR_NOC, DS_CAMINHO_NOC, DT_ABERTURA, DT_VENCIMENTO, CD_PROCEDENCIA, CD_STATUS, DS_CAUSA, DS_OBSERVACOES, CD_RESPONSAVEL, CD_PRIORIDADE FROM dbo.VIEW_REGISTROS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CD_REGISTRO" DataSetColumn="CD_REGISTRO" />
+              <Mapping SourceColumn="DS_REGISTRO" DataSetColumn="DS_REGISTRO" />
+              <Mapping SourceColumn="NR_NOC" DataSetColumn="NR_NOC" />
+              <Mapping SourceColumn="DS_CAMINHO_NOC" DataSetColumn="DS_CAMINHO_NOC" />
+              <Mapping SourceColumn="DT_ABERTURA" DataSetColumn="DT_ABERTURA" />
+              <Mapping SourceColumn="DT_VENCIMENTO" DataSetColumn="DT_VENCIMENTO" />
+              <Mapping SourceColumn="CD_PROCEDENCIA" DataSetColumn="CD_PROCEDENCIA" />
+              <Mapping SourceColumn="CD_STATUS" DataSetColumn="CD_STATUS" />
+              <Mapping SourceColumn="DS_CAUSA" DataSetColumn="DS_CAUSA" />
+              <Mapping SourceColumn="DS_OBSERVACOES" DataSetColumn="DS_OBSERVACOES" />
+              <Mapping SourceColumn="CD_RESPONSAVEL" DataSetColumn="CD_RESPONSAVEL" />
+              <Mapping SourceColumn="CD_PRIORIDADE" DataSetColumn="CD_PRIORIDADE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SGQQDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SGQQDataSet" msprop:Generator_UserDSName="SGQQDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_REGISTROS" msprop:Generator_TableClassName="VIEW_REGISTROSDataTable" msprop:Generator_TableVarName="tableVIEW_REGISTROS" msprop:Generator_TablePropName="VIEW_REGISTROS" msprop:Generator_RowDeletingName="VIEW_REGISTROSRowDeleting" msprop:Generator_RowChangingName="VIEW_REGISTROSRowChanging" msprop:Generator_RowEvHandlerName="VIEW_REGISTROSRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_REGISTROSRowDeleted" msprop:Generator_UserTableName="VIEW_REGISTROS" msprop:Generator_RowChangedName="VIEW_REGISTROSRowChanged" msprop:Generator_RowEvArgName="VIEW_REGISTROSRowChangeEvent" msprop:Generator_RowClassName="VIEW_REGISTROSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CD_REGISTRO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCD_REGISTRO" msprop:Generator_ColumnPropNameInRow="CD_REGISTRO" msprop:Generator_ColumnPropNameInTable="CD_REGISTROColumn" msprop:Generator_UserColumnName="CD_REGISTRO" type="xs:int" />
+              <xs:element name="DS_REGISTRO" msprop:Generator_ColumnVarNameInTable="columnDS_REGISTRO" msprop:Generator_ColumnPropNameInRow="DS_REGISTRO" msprop:Generator_ColumnPropNameInTable="DS_REGISTROColumn" msprop:Generator_UserColumnName="DS_REGISTRO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NR_NOC" msprop:Generator_ColumnVarNameInTable="columnNR_NOC" msprop:Generator_ColumnPropNameInRow="NR_NOC" msprop:Generator_ColumnPropNameInTable="NR_NOCColumn" msprop:Generator_UserColumnName="NR_NOC" type="xs:int" minOccurs="0" />
+              <xs:element name="DS_CAMINHO_NOC" msprop:Generator_ColumnVarNameInTable="columnDS_CAMINHO_NOC" msprop:Generator_ColumnPropNameInRow="DS_CAMINHO_NOC" msprop:Generator_ColumnPropNameInTable="DS_CAMINHO_NOCColumn" msprop:Generator_UserColumnName="DS_CAMINHO_NOC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DT_ABERTURA" msprop:Generator_ColumnVarNameInTable="columnDT_ABERTURA" msprop:Generator_ColumnPropNameInRow="DT_ABERTURA" msprop:Generator_ColumnPropNameInTable="DT_ABERTURAColumn" msprop:Generator_UserColumnName="DT_ABERTURA" type="xs:dateTime" />
+              <xs:element name="DT_VENCIMENTO" msprop:Generator_ColumnVarNameInTable="columnDT_VENCIMENTO" msprop:Generator_ColumnPropNameInRow="DT_VENCIMENTO" msprop:Generator_ColumnPropNameInTable="DT_VENCIMENTOColumn" msprop:Generator_UserColumnName="DT_VENCIMENTO" type="xs:dateTime" />
+              <xs:element name="CD_PROCEDENCIA" msprop:Generator_ColumnVarNameInTable="columnCD_PROCEDENCIA" msprop:Generator_ColumnPropNameInRow="CD_PROCEDENCIA" msprop:Generator_ColumnPropNameInTable="CD_PROCEDENCIAColumn" msprop:Generator_UserColumnName="CD_PROCEDENCIA" type="xs:int" />
+              <xs:element name="CD_STATUS" msprop:Generator_ColumnVarNameInTable="columnCD_STATUS" msprop:Generator_ColumnPropNameInRow="CD_STATUS" msprop:Generator_ColumnPropNameInTable="CD_STATUSColumn" msprop:Generator_UserColumnName="CD_STATUS" type="xs:int" />
+              <xs:element name="DS_CAUSA" msprop:Generator_ColumnVarNameInTable="columnDS_CAUSA" msprop:Generator_ColumnPropNameInRow="DS_CAUSA" msprop:Generator_ColumnPropNameInTable="DS_CAUSAColumn" msprop:Generator_UserColumnName="DS_CAUSA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DS_OBSERVACOES" msprop:Generator_ColumnVarNameInTable="columnDS_OBSERVACOES" msprop:Generator_ColumnPropNameInRow="DS_OBSERVACOES" msprop:Generator_ColumnPropNameInTable="DS_OBSERVACOESColumn" msprop:Generator_UserColumnName="DS_OBSERVACOES">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_RESPONSAVEL" msprop:Generator_ColumnVarNameInTable="columnCD_RESPONSAVEL" msprop:Generator_ColumnPropNameInRow="CD_RESPONSAVEL" msprop:Generator_ColumnPropNameInTable="CD_RESPONSAVELColumn" msprop:Generator_UserColumnName="CD_RESPONSAVEL" type="xs:int" />
+              <xs:element name="CD_PRIORIDADE" msprop:Generator_ColumnVarNameInTable="columnCD_PRIORIDADE" msprop:Generator_ColumnPropNameInRow="CD_PRIORIDADE" msprop:Generator_ColumnPropNameInTable="CD_PRIORIDADEColumn" msprop:Generator_UserColumnName="CD_PRIORIDADE" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VIEW_REGISTROS" />
+      <xs:field xpath="mstns:CD_REGISTRO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
